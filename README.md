@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+# 🏥 Appointment Calendar for Clinic Staff
 
-## Project info
+A responsive, frontend-only calendar application built with **React.js**, **Tailwind CSS**, and **jQuery** (optional for small UI interactions), designed to help clinic or hospital front desk staff manage doctor appointments easily and efficiently.
 
-**URL**: https://lovable.dev/projects/9c58d458-8786-429c-8267-72f34c5a3344
+## 📌 Project Overview
 
-## How can I edit this code?
+This project provides a **simple appointment management system** without a backend. All data is stored in the browser using **localStorage**, making it fast, lightweight, and ideal for demo or internal use cases.
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+### ✅ Login (Mock Authentication)
+- Simple email/password login form
+- Hardcoded credentials:
+- Redirects to the calendar upon successful login
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9c58d458-8786-429c-8267-72f34c5a3344) and start prompting.
+### 🗓️ Calendar View
+- **Desktop**:
+- Month view with compact listing of daily appointments
+- Click a day to add/edit appointments
+- **Mobile**:
+- One-day-at-a-time view
+- Date picker to jump to any date
+- Scrollable vertical layout for usability
 
-Changes made via Lovable will be committed automatically to this repo.
+### 👩‍⚕️ Appointments
+- Appointment includes:
+- Patient (select dropdown)
+- Doctor (select dropdown)
+- Time (time picker)
+- Fixed list of patients and doctors (via JSON or hardcoded)
+- Add/Edit appointments via a modal form
+- Data stored in `localStorage` (persistent across refresh)
 
-**Use your preferred IDE**
+### 🧠 Calendar Logic
+- Displays only the **current month**
+- Skips blank leading days for clean layout
+- (Optional) Grey-out adjacent month days
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🌟 Nice-to-Haves
+- [x] Delete appointments
+- [x] Filter by doctor or patient
+- [x] Dark mode toggle
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
+## 💻 Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Technology       | Purpose                            |
+|------------------|-------------------------------------|
+| React.js         | Frontend framework (SPA behavior)   |
+| Tailwind CSS     | Fast, utility-first UI styling      |
+| React Router     | Page routing (login → calendar)     |
+| jQuery (optional)| Minor UI enhancements (if used)     |
+| localStorage     | Persistent client-side data storage |
+| React Hooks      | State & effect management           |
+| Calendar Library | [`react-big-calendar`](https://github.com/jquense/react-big-calendar) or custom |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/9c58d458-8786-429c-8267-72f34c5a3344) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
